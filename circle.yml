@@ -1,6 +1,6 @@
 test:
   override:
-    - bundle exec rspec specs
+    - bundle exec rspec spec
 
 deployment:
   production:
@@ -8,4 +8,4 @@ deployment:
     commands:
       - aws s3 sync --delete out s3://starfigherheavyindustries.com/ --region us-west-1
       # - aws configure set preview.cloudfront true
-      # - aws cloudfront create-invalidation --distribution-id [] --paths /\*
+      # - aws cloudfront create-invalidation --distribution-id []  --paths /\*
