@@ -7,5 +7,5 @@ deployment:
     branch: master
     commands:
       - aws s3 sync --delete public s3://starfighterheavyindustries.com/ --region us-west-1
-      # - aws configure set preview.cloudfront true
-      # - aws cloudfront create-invalidation --distribution-id []  --paths /\*
+      - aws configure set preview.cloudfront true
+      - aws cloudfront create-invalidation --distribution-id E1VXSH0BYAXCTE --paths /\*
